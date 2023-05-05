@@ -228,6 +228,15 @@ h2 {
     .header {
         font-size: 18px;
    }
+   .profession {
+    margin-left: 20px;
+   }
+   .responsibilitieas {
+    margin-left: 15px; 
+   }
+   .list {
+    margin: 0;
+   }
 }
 @media all and (max-width: 320px) {
     .header {
@@ -251,15 +260,6 @@ h2 {
         width: 10px;
         height: 10px;
         margin: 2px;
-   }
-    .profession {
-        margin-left: 20px;
-   }
-    .responsibilitieas {
-        margin-left: 15px;
-   }
-    .list {
-        margin: 0;
    }
     .portfolio a {
         font-size: 12px;
