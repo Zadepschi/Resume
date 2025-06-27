@@ -196,7 +196,13 @@
         <div class="block-personal">
 
          <div class="pic"> 
-            <img class="myPicture" src="myPicture.JPG"/>
+            <img id="thumbnail" class="myPicture" src="myPicture.JPG" alt="My Photo" />
+
+            <!-- Fullscreen overlay -->
+             <div id="overlay" class="overlay">
+               <span class="close-btn" onclick="closeFullscreen()">&times;</span>
+              <img id="fullscreenImage" class="fullscreen-img" src="myPicture.JPG" />
+           </div>
          </div>
 
          <div class="name-location">
@@ -368,12 +374,12 @@
 
             <div class="circle-mark">
                <span class="circle-work"></span>  
-               <p class="mark">Удалённо, США | Ноябрь 2022 - Май 2025</p>
+               <p class="mark">Менеджер по работе с маркетплейсами (Amazon, Walmart, Temu)</p>
             </div>
 
             <div class="profession-box">
-               <p  class="profession">Stim Optimum, Inc. USA:</p>
-               <p class="profession-par">Менеджер по работе с маркетплейсами (Amazon, Walmart)</p>
+               <p  class="profession">Stim Optimum, Inc. – Удалённо (США)</p>
+               <p class="profession-par">Ноябрь 2022 – Май 2025</p>
             </div>
 
               </div>
@@ -389,18 +395,21 @@
             </div>
          </div>
          <ul>
-            <li class="bullet"><span>Управление аккаунтами Amazon и Walmart </span></li>
-            <li  class="bullet"><span>Поддержание показателей Account Health</span></li>
-            <li  class="bullet"><span>Создание и оптимизация карточек товаров</span></li>
-            <li class="bullet"><span>Переписка с клиентами и службой поддержки</span></li>
+            <li class="bullet"><span>Управление аккаунтами на платформах Amazon, Walmart и Temu</span></li>
+            <li  class="bullet"><span>Поддержание высокого уровня Account Health и соблюдение правил площадок</span></li>
+            <li  class="bullet"><span>Создание и оптимизация карточек товаров с использованием SEO и подбора ключевых слов</span></li>
+            <li class="bullet"><span>Переписка с клиентами и службой поддержки маркетплейсов</span></li>
             <li class="bullet"><span>Обработка заказов, возвратов и претензий</span></li>
-            <li class="bullet"><span>Работа с FBA, FBM, WFS</span></li>
-            <li class="bullet"><span>Анализ продаж и отчётность</span></li>
-            <li class="bullet"><span>Работа с Excel / Google Sheets </span></li>
-            <li class="bullet"><span>Работа с блокировками, страйками, апелляциями</span></li>
-            <li class="bullet"><span>Ценообразование и управление скидками</span></li>
-            <li class="bullet"><span>Владение английским на уровне деловой переписки </span></li>
-            <li class="bullet"><span>Настройка и ведение PPC-кампаний (Amazon Advertising)</span></li>
+            <li class="bullet"><span>Работа с логистикой через FBA, FBM и WFS</span></li>
+            <li class="bullet"><span>Анализ продаж и составление регулярных отчетов</span></li>
+            <li class="bullet"><span>Решение проблем с аккаунтом: блокировки, страйки, апелляции</span></li>
+            <li class="bullet"><span>Управление ценообразованием, скидками и акциями</span></li>
+            <li class="bullet"><span>Запуск, ведение и оптимизация PPC-кампаний (Amazon Ads)</span></li>
+            <li class="bullet"><span>Мониторинг конкурентов и проведение анализа рынка</span></li>
+            <li class="bullet"><span>Прогнозирование потребностей в запасах и управление остатками</span></li>
+             <li class="bullet"><span>Работа с отзывами покупателей и управлением репутацией бренда</span></li>
+             <li class="bullet"><span>Взаимодействие с командами маркетинга, закупок и логистики</span></li>
+             <li class="bullet"><span>Использование инструментов: Keepa, Seller Assistant App, Excel, Google Sheets</span></li>
          </ul>
             </div>
         </div> 
@@ -413,12 +422,12 @@
 
             <div class="circle-mark">
                <span class="circle-work"></span>  
-               <p class="mark">Июнь 2021 - н.в.</p>
+               <p class="mark">Фрилансер</p>
             </div>
 
             <div class="profession-box">
-               <p class="profession">Фрилансер: </p>
-               <p class="profession-par">Frontend-разработчик</p>
+               <p class="profession">Frontend-разработчик</p>
+               <p class="profession-par">Июнь 2021 – настоящее время</p>
             </div>
             <p class="responsibilitieas">Должностные обязанности:</p>
             <ul class="list">
@@ -451,22 +460,31 @@
                <h2>Навыки разработчика</h2>
             </div>
          </div>
+          <h3>Фронтенд:</h3>
          <ul>
-            <li class="bullet"><span> HTML 5, CSS 3</span></li>
-            <li  class="bullet"><span>Javascript</span></li>
-            <li  class="bullet"><span>React</span></li>
-            <li class="bullet"><span>Redux</span></li>
-            <li class="bullet"><span>Node</span></li>
-            <li class="bullet"><span>Git</span></li>
-            <li class="bullet"><span>GitHub</span></li>
-            <li class="bullet"><span>Bootstrap 5</span></li>
-            <li class="bullet"><span>json</span></li>
-            <li class="bullet"><span>Адаптивная верстка</span></li>
-            <li class="bullet"><span>Кроссбраузерная верстка</span></li>
-            <li class="bullet"><span>Figma</span></li>
-            <li class="bullet"><span>Postman</span></li>
-            <li class="bullet"><span>MongoDB</span></li>
+            <li class="bullet"><span>HTML5, CSS3, JavaScript, React, Redux, Bootstrap 5</span></li>
+            <li  class="bullet"><span>Адаптивная и кроссбраузерная верстка</span></li>
+            <li  class="bullet"><span>Figma (интерпретация UI-дизайна)</span></li>
+            <li class="bullet"><span>Framer Motion (анимации в React)</span></li>
          </ul>
+          <h3>Бэкенд и инструменты:</h3>
+          <ul>
+            <li class="bullet"><span>Node.js, JSON, MongoDB, Postman</span></li>
+            <li class="bullet"><span>Git, GitHub</span></li>
+          </ul>
+        <h3>E-commerce и CMS:</h3>
+        <ul>
+           <li class="bullet"><span>OpenCart, WordPress</span></li>
+        </ul>
+          <h3>Дополнительные технологии:</h3>
+         <ul>
+            <li class="bullet"><span>Canvas API (2D и базовый 3D рендеринг)</span></li>
+            <li class="bullet"><span>GSAP (GreenSock Animation Platform)</span></li>
+            <li class="bullet"><span>SweetAlert2 (стильные модальные окна уведомлений)</span></li>
+            <li class="bullet"><span>Tone.js (Web Audio API для синтеза звука)</span></li>
+            <li class="bullet"><span>VexFlow (отображение музыкальной нотации)</span></li>
+         </ul>
+      
              </div>
       </div>   
 
@@ -477,19 +495,23 @@
             <div>
             <div class="circle-mark">
                <span class="circle-work"></span>
-               <p class="mark">Май 2013 - Март 2018</p>
+               <p class="mark">Соучредитель и управляющий агентством недвижимости</p>
             </div>
             <div class="profession-box">
-               <p  class="profession">Агентство недвижимости "Anteksper":</p>
-               <p class="profession-par">Соучредитель. Менеджер по недвижимости</p>
+               <p  class="profession">Агентство недвижимости «Anteksper» – Анталья, Турция</p>
+               <p class="profession-par">Май 2013 – Март 2018</p>
             </div>
             <p class="responsibilitieas">Должностные обязанности:</p>
             <ul class="list">
-               <li>Подбор объектов недвижимости</li>
-               <li>Заключение договоров</li>
-               <li>Проведение осмотров</li>
-               <li>Подготовка документов к сделке</li>
-               <li>Сопровождение клиентов по сделке</li>
+               <li>Соучредитель и руководитель агентства недвижимости</li>
+               <li>Подбор и подбор объектов недвижимости в соответствии с потребностями клиентов</li>
+               <li>Организация и проведение просмотров недвижимости</li>
+               <li>Подготовка и проверка договоров и сопутствующих документов</li>
+               <li>Сопровождение клиентов на всех этапах сделки</li>
+               <li>Ведение коммуникации между покупателями, продавцами и юридическими сторонами</li>
+               <li>Обеспечение соблюдения всех юридических и процедурных требований при сделках</li>
+               <li>Предоставление послепродажной поддержки и консультаций</li>
+               <li>Работа с локальными и международными клиентами (русскоязычный и турецкоязычный рынки)</li>
             </ul>
             </div>
 
@@ -497,24 +519,24 @@
            <div>
             <div class="circle-mark">
                <span class="circle-work"></span> 
-               <p class="mark">Апрель 2006 - Февраль 2013</p>
+               <p class="mark">Менеджер по продажам, строительная компания</p>
             </div>
             <div class="profession-box">
-               <p  class="profession">Строительная компания "Eksioglu":</p>
-               <p class="profession-par">Менеджер по продажам</p>
+               <p  class="profession">Группа компаний Eksioglu, Анталья, Турция</p>
+               <p class="profession-par">Апрель 2006 – Февраль 2013</p>
             </div>
             <p class="responsibilitieas">Должностные обязанности:</p>
             <ul class="list">
-               <li>Подбор объектов недвижимости</li>
-               <li>Заключение договоров</li>
-               <li>Проведение осмотров</li>
-               <li>Подготовка документов к сделке</li>
-               <li>Сопровождение клиентов по сделке</li>
+               <li>Подбор и презентация объекты недвижимости клиентам</li>
+               <li>Ведение переговоров и заключение договоров</li>
+               <li>Организация и показ недвижимости</li>
+               <li>ГПодготовка юридических документов для сделок</li>
+               <li>Сопровождение клиентов на всех этапах сделки</li>
             </ul>
             <p class="responsibilitieas">Достижения:</p>
             <ul class="list">
-               <li>Принесла компании доход больше 15 млн. долларов США</li>
-               <li>Привлекла инвесторов в крупный строительный проект</li>
+               <li>Обеспечила компании доход свыше 15 миллионов долларов США</li>
+               <li>Привлекла крупных инвесторов в масштабный строительный проект</li>
             </ul>
            </div>
               </div>
@@ -531,18 +553,18 @@
                </div>
              </div>
              <ul>
-               <li class="bullet"><span> Заключение договоров</span></li>
+               <li class="bullet"><span>Ведение переговоров и составление договоров</span></li>
                <li  class="bullet"><span>Навыки продаж</span></li>
-               <li  class="bullet"><span>Ведение переговоров</span></li>
+               <li  class="bullet"><span>Общение и ведение переговоров с клиентами</span></li>
                <li class="bullet"><span>Подготовка документов на русском и на турецком языках</span></li>
                <li class="bullet"><span>Сопровождение сделок</span></li>
-               <li class="bullet"><span>Поиск клиентов</span></li>
-               <li class="bullet"><span>Презентация объектов</span></li>
+               <li class="bullet"><span>Поиск клиентов и генерация лидов</span></li>
+               <li class="bullet"><span>Презентация объектов недвижимости</span></li>
                <li class="bullet"><span>Деловая коммуникация</span></li>
                <li class="bullet"><span>Консультирование клиентов</span></li>
                <li class="bullet"><span>Грамотная речь</span></li>
                <li class="bullet"><span>Стратегическое планирование</span></li>
-               <li class="bullet"><span>Работа в команде</span></li>
+               <li class="bullet"><span>Работа в команде и сотрудничество</span></li>
             </ul>
                 </div>
       </div>
@@ -560,17 +582,16 @@
             <div class="university">
                <div class="circle-mark">
                   <span class="circle-work"></span> 
-                  <p class="mark">2000</p>
+                  <p class="mark">Тираспольский государственный университет – Молдова</p>
                </div>
                <div class="profession-box">
-                  <p  class="profession">Высшее:</p>
-                  <p  class="profession-par">Тираспольский государственный университет</p>
+                  <p  class="profession-par">Факультет физики и математики</p>
+                  <p  class="profession-par">Степень: Высшее образование (эквивалент бакалавра)</p>
+                  <p  class="profession-par">Специальность: Математика</p>
+                  <p  class="profession-par">Год окончания: 2000</p>
                </div>
                <br>
-               <div class="profession-box">
-                  <p  class="profession">Физико-математический факультет: </p>
-                  <p  class="profession-par">Математика</p>
-               </div>
+
             </div>
 
              <div class="coursInfo">  
@@ -586,11 +607,11 @@
             <div>
                <div class="circle-mark">
                   <span class="circle-work"></span>
-                  <p class="mark">Продолжаю обучение</p>
+                  <p class="mark">Курс Frontend-разработки – CanSheCode Inc, Канада</p>
                </div>
                <div class="profession-box">
-                  <p  class="profession">CanSheCode Canada: </p>
-                  <p  class="profession-par">Frontend-разработчик</p>
+                  <p  class="profession">Программа: Frontend Developer</p>
+                  <p  class="profession-par">В процессе обучения: Разработка на Flutter</p>
                </div>
             </div>
             </div>  
@@ -605,7 +626,7 @@
                </div>
             </div>
 <div class="aboutMe">
-            <p class="list">Ответственный специалист с опытом в электронной коммерции и веб-разработке.
+            <p class="listAbout">Ответственный специалист с опытом в электронной коммерции и веб-разработке.
                  Быстро обучаюсь, легко осваиваю новые инструменты, выстраиваю эффективную 
                 коммуникацию и рабочие процессы. Ориентирована на результат и профессиональное развитие.
             </p>
@@ -616,5 +637,6 @@
           </div>
 
 </div>
+<script src="script.js"></script>
    </body>
 </html>

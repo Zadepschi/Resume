@@ -80,7 +80,9 @@ body {
     fill: #2ba6e1;
 }
 
-
+li {
+    margin: 8px;
+}
 h2 {
     color: #48c4ca ;
 }
@@ -131,9 +133,15 @@ h2 {
 
 
 
+.list {
+    margin: 10px;
+    padding: 10px;
+}
 
-
-
+.listAbout {
+    margin: 40px;
+    padding: 40px;
+}
 
 
 
@@ -305,30 +313,86 @@ flex-direction: column;
     font-size: 18px;
 }
 .mark {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     margin-left: 20px;
 }
 .profession {
-   
+    margin-left: 40px;
     font-weight: bold;
     font-size: 18px;
 }
 .profession-par {
+    margin-left:  40px;
     font-size: 18px;
-    margin: 0;
+    
+   
 }
 .responsibilitieas {
     margin-left: 65px;
+    margin-top: 40px;
     font-weight: bold;
 }
-.list {
-   margin: 20px;
-   padding: 20px;
-}
+
 .aboutMe {
      background-color: #f1f5f5;
 }
+
+/* Оверлей с плавным появлением */
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Когда активен */
+.overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+/* Картинка с плавным увеличением */
+.fullscreen-img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 1px white;
+  border-radius: 10px;
+  transform: scale(0.8);
+  transition: transform 0.4s ease;
+}
+
+.overlay.active .fullscreen-img {
+  transform: scale(1);
+}
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 56px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+  z-index: 1001; /* обязательно выше, чем у картинки */
+}
+
+
+.close-btn:hover {
+  color: #48c4ca;
+}
+
+
+
+
 
 
 @media (max-width: 1162px)  {
