@@ -420,8 +420,8 @@ flex-direction: column;
 .language-box {
   display: flex;
   align-items: center;
-  gap: 15px; 
-  margin: 10px 0;
+
+  margin: 5px 0;
 }
 
 .language-box .language p {
@@ -441,7 +441,7 @@ flex-direction: column;
   height: 15px;
   background: #48c4ca;
   border-radius: 50%;
-  margin: 0 3px;
+ 
 }
 
 .lavel p {
@@ -463,6 +463,47 @@ flex-direction: column;
 .workBlok {
      flex-direction: column;
 }
+.workPlace {
+    margin: 7px;
+    padding: 7px;
+}
+.mark {
+    margin: 5px 0 5px 20px;
+}
+.profession {
+    margin: 5px 0 5px 40px;
+}
+.profession-par {
+     margin: 5px 0 5px 40px;
+}
+.experience {
+       margin: 5px;
+    padding: 5px;
+}
+h2 {
+    font-size: 20px;
+}
+.responsibilitieas {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.listAbout {
+      margin: 10px;
+    padding: 10px;
+}
+.constractionFirm {
+  
+    margin: 5px;
+    padding: 5px;
+}
+.freelanceBlok, .frontendSkills, .university, .coursInfo {
+    
+    margin: 5px;
+    padding: 5px;
+}
+ul {
+    padding: 7px;
+margin: 7px;}
 }
 
 
@@ -543,6 +584,14 @@ flex-direction: column;
     flex-direction: column;
     align-items: center;
     margin: 0;
+    font-size: 14px;
+}
+.mark {
+    font-size: 16px;
+   width: 80%;
+}
+.profession, .profession-par {
+     font-size: 16px;
 }
 
 }
@@ -552,6 +601,9 @@ flex-direction: column;
     .language-box {
          flex-wrap: wrap; 
          width: 90%;
+    }
+    h2 {
+        font-size: 18px;
     }
 }
 
